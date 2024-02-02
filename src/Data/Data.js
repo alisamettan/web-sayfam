@@ -61,6 +61,77 @@ export const Data = {
         vercelUrl: "https://bookstore-three-steel.vercel.app/",
       },
     ],
+    header: {
+      text: "Let's work together on your next product.",
+      social: ["Github", "Personal Blog", "Linkedin", "Email"],
+    },
+  },
+  tr: {
+    about: {
+      main: "Ben Ali Samet Tan, full-stack web geliştiriciyim. Sağlam ve ölçeklenebilir ön yüz ürünleri oluşturabilirim. Tanışmak ister misin!?",
+      join: "Şu anda serbest çalışan olarak web projeleri üzerinde çalışıyorum. Beni ekibinize katılmanız için davet edebilirsiniz.",
+    },
+    skills: [
+      { img: "src/assets/logos/JavaScript-logo.png", skill: "JAVASCRIPT" },
+      { img: "src/assets/logos/react-logo.png", skill: "REACT" },
+      { img: "src/assets/logos/redux-logo.png", skill: "REDUX" },
+      { img: "src/assets/logos/node-logo.png", skill: "NODE" },
+      { img: "src/assets/logos/vs-code-logo.png", skill: "VS CODE" },
+      { img: "src/assets/logos/figma-logo.png", skill: "FIGMA" },
+    ],
+    profile: {
+      title: "Temel Bilgiler",
+      section: [
+        { title: "Doğum Tarihi", info: "24.01.2000" },
+        { title: "İkamet Şehri", info: "İstanbul" },
+        {
+          title: "Eğitim Durumu",
+          info: "Beykent Üniversitesi,Bilgisayar Mühendisliği,2023",
+        },
+        { title: "Tercih Ettiği Rol", info: "Frontend,UI" },
+      ],
+      abouttitle: "Hakkımda",
+      about:
+        "Beykent Üniversitesi'nden 2023 yılında Bilgisayar Mühendisliği bölümünden mezun oldum. Üniversite yıllarımda, üç ay süreyle bir startup'ta frontend geliştirici olarak staj yapma fırsatı buldum. Üniversitenin son yılında ise, mezuniyetim öncesinde bir bankada backend geliştirici olarak stajımı tamamladım, bu da pratik deneyimlerimi pekiştirdi.Mezuniyetim sonrasında, yazılım eğitimi konusunda uzmanlaşmış bir şirket olan Workintech'te tam yığın geliştirici eğitim programına katıldım. Bu program süresince, hem frontend hem de backend geliştirme alanındaki becerilerimi geliştirmek amacıyla çeşitli projelerde yer aldım.",
+    },
+    projects: [
+      {
+        title: "Pizza Sitesi",
+        explanation: "Kolay bir kullanıcı arayüzü ile pizza siparişi verme",
+        techs: ["react", "vercel", "router", "form"],
+        github: "Github'da Görüntüle",
+        img: "src/assets/pics/pizza.png",
+        githubUrl: "https://github.com/alisamettan/Pizza-Website/tree/main",
+        vercel: "Uygulamaya Git",
+        vercelUrl: "https://pizzastore-lime.vercel.app/",
+      },
+      {
+        title: "Sevdiğiniz filmleri listenize eklemek ister misiniz?",
+        explanation:
+          "Bu web sitesinde, kullanıcılar sevdikleri filmleri ekleyebilir ve bunları favorilere ekleyebilirler",
+        techs: ["react", "vercel", "router", "localStorage", "axios"],
+        github: "Github'da Görüntüle",
+        img: "src/assets/pics/movie.png",
+        githubUrl: "https://github.com/alisamettan/AddMovieWebsite/tree/main",
+        vercel: "Uygulamaya Git",
+        vercelUrl: "https://movieaddel.vercel.app/movies",
+      },
+      {
+        title: "Hadi kitap satın alalım!",
+        explanation:
+          "Bu, online kitap siparişi verme websitesidir. Kullanıcılar istedikleri kitapları kolayca sepete ekleyebilirler.",
+        techs: ["react", "vercel", "router", "contextAPI"],
+        github: "Github'da Görüntüle",
+        img: "src/assets/pics/book.png",
+        githubUrl: "https://github.com/alisamettan/BookStorewContextAPI",
+        vercel: "Uygulamaya Git",
+        vercelUrl: "https://bookstore-three-steel.vercel.app/",
+      },
+    ],
+    header: {
+      text: "Bir sonraki ürününüzde beraber çalışalım!",
+      social: ["Github", "Personal Blog", "Linkedin", "Email"],
+    },
   },
 };
 /* title: "Basic Information",
