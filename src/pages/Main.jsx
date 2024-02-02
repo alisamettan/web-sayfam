@@ -6,12 +6,13 @@ import Skills from "../components/Skills";
 
 export default function Main() {
   return (
-    <>
+    <div className="pb-28">
+      {/* pb proje sonu buradan kaldırılacak */}
       <Header />
       <About />
       <Skills />
       <Profile />
       <Projects />
-    </>
+    </div>
   );
 }

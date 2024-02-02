@@ -13,8 +13,12 @@ export default function About() {
           magni.
         </p>
         <div className="flex gap-6 pt-4">
-          <FontAwesomeIcon className="text-2xl" icon={faLinkedinIn} />
-          <FontAwesomeIcon className="text-2xl" icon={faGithub} />
+          <a href="https://www.linkedin.com/in/alisamettan/">
+            <FontAwesomeIcon className="text-2xl" icon={faLinkedinIn} />
+          </a>
+          <a href="https://github.com/alisamettan">
+            <FontAwesomeIcon className="text-2xl" icon={faGithub} />
+          </a>
         </div>
         <p>
           Currently doing Websites Projects as freelance.<br></br>Invite me to
