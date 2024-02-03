@@ -30,13 +30,15 @@ export const Data = {
     projects: [
       {
         title: "Pizza Website",
-        explanation: "Ordering pizza easily with easy UI",
+        explanation:
+          "Ordering pizza easily with easy UI.This app is completely developed as mobile responsive.",
         techs: ["react", "vercel", "router", "form"],
         github: "View on Github",
         img: "src/assets/pics/pizza.png",
         githubUrl: "https://github.com/alisamettan/Pizza-Website/tree/main",
         vercel: "Go to app",
         vercelUrl: "https://pizzastore-lime.vercel.app/",
+        color: "#B4D4FF",
       },
       {
         title: "Do you want to add movies that you love?",
@@ -48,6 +50,7 @@ export const Data = {
         githubUrl: "https://github.com/alisamettan/AddMovieWebsite/tree/main",
         vercel: "Go to app",
         vercelUrl: "https://movieaddel.vercel.app/movies",
+        color: "#C3E2C2",
       },
       {
         title: "Let's buy some books",
@@ -59,9 +62,10 @@ export const Data = {
         githubUrl: "https://github.com/alisamettan/BookStorewContextAPI",
         vercel: "Go to app",
         vercelUrl: "https://bookstore-three-steel.vercel.app/",
+        color: "#FFE7C1",
       },
     ],
-    header: {
+    footer: {
       text: "Let's work together on your next product.",
       social: ["Github", "Personal Blog", "Linkedin", "Email"],
     },
@@ -97,13 +101,15 @@ export const Data = {
     projects: [
       {
         title: "Pizza Sitesi",
-        explanation: "Kolay bir kullanıcı arayüzü ile pizza siparişi verme",
+        explanation:
+          "Kolay bir kullanıcı arayüzü ile pizza siparişi verme.Bu proje tamamen mobile uygun olarak geliştirildi.",
         techs: ["react", "vercel", "router", "form"],
         github: "Github'da Görüntüle",
         img: "src/assets/pics/pizza.png",
         githubUrl: "https://github.com/alisamettan/Pizza-Website/tree/main",
         vercel: "Uygulamaya Git",
         vercelUrl: "https://pizzastore-lime.vercel.app/",
+        color: "#B4D4FF",
       },
       {
         title: "Sevdiğiniz filmleri listenize eklemek ister misiniz?",
@@ -115,6 +121,7 @@ export const Data = {
         githubUrl: "https://github.com/alisamettan/AddMovieWebsite/tree/main",
         vercel: "Uygulamaya Git",
         vercelUrl: "https://movieaddel.vercel.app/movies",
+        color: "#C3E2C2",
       },
       {
         title: "Hadi kitap satın alalım!",
@@ -126,9 +133,10 @@ export const Data = {
         githubUrl: "https://github.com/alisamettan/BookStorewContextAPI",
         vercel: "Uygulamaya Git",
         vercelUrl: "https://bookstore-three-steel.vercel.app/",
+        color: "#FFE7C1",
       },
     ],
-    header: {
+    footer: {
       text: "Bir sonraki ürününüzde beraber çalışalım!",
       social: ["Github", "Personal Blog", "Linkedin", "Email"],
     },
