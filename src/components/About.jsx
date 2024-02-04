@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function About() {
   return (
-    <div className="pt-10 bg-slate-100 pb-5 flex flex-row justify-between gap-60">
+    <div className="pt-10 bg-slate-100 pb-5 flex flex-row justify-between gap-60 dark:bg-[_#2A262B]">
       <div className="pl-40 flex flex-col gap-y-5 flex-1">
         <h1 className="text-xl ">Hi! 👋</h1>
         <p className="text-xl font-semibold">

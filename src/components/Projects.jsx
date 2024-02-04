@@ -1,19 +1,29 @@
+import { useContext } from "react";
 import { Data } from "../Data/Data";
+import { DarkModeContext } from "../context/DarkModeContext";
 
 export default function Projects() {
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className="bg-white ">
+    <div className="bg-white dark:bg-[_#484148]">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-medium text-center pt-20 pb-16">
           Projects
         </h1>
-        <div className="flex flex-row gap-14 mx-8 ">
+        <div className="flex flex-row gap-14 mx-8 text-black">
           {Data.en.projects.map((project, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10"
-                style={{ backgroundColor: project.color }}
+                className={
+                  darkMode
+                    ? "flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10 dark:bg-[_#495351]"
+                    : "flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10"
+                }
+                style={{
+                  backgroundColor: project.color,
+                }}
               >
                 <h2 className="text-xl text-center font-playfair font-bold">
                   {project.title}
