@@ -14,7 +14,9 @@ export default function About() {
   return (
     <div className="pt-10  bg-slate-100 pb-5 flex lg:flex-row justify-between  dark:bg-[_#2A262B] lg:pr-0 lg:gap-60 md:gap-28 md:mx-auto sm:gap-44 sm:px-12">
       <div className="lg:pl-40 flex flex-col gap-y-5 flex-1 sm:mx-auto ">
-        <h1 className="text-xl ">Hi! 👋</h1>
+        <h1 className="text-xl ">
+          {currentLang == "en" ? "Hi!" : "Merhaba!"} 👋
+        </h1>
         <p className="text-xl font-semibold">{currentData.about.main}</p>
         <div className="flex gap-6 pt-4">
           <a href="https://www.linkedin.com/in/alisamettan/">

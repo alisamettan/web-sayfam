@@ -19,7 +19,7 @@ export default function Projects() {
     <div className="bg-white dark:bg-[_#484148]">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-medium text-center pt-20 pb-16">
-          Projects
+          {currentLang == "en" ? "Projects" : "Projeler"}
         </h1>
         <div className="flex lg:flex-row gap-14 mx-8 text-black md:flex-col md:justify-center sm:flex-col">
           {currentData.projects.map((project, index) => {
