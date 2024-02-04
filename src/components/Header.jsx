@@ -1,8 +1,10 @@
 import { useContext } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
+import { LanguageContext } from "../context/LanguageContext";
 
 export default function Header() {
   const { toggleDarkMode, darkMode } = useContext(DarkModeContext);
+  const { languageSwitcher } = useContext(LanguageContext);
   return (
     <div className="py-8 flex justify-end pr-10 bg-slate-100 dark:bg-[_#2A262B] ">
       <label className="relative inline-flex items-center cursor-pointer">
@@ -19,8 +21,14 @@ export default function Header() {
           {darkMode ? "Light Mode" : "Dark Mode"}
         </span>
       </label>
-      <span className="pl-5 font-medium text-gray-500">
-        <a className="text-red-500">TÜRKÇE'YE</a> GEÇ
+      <span className="ml-5 font-medium text-gray-500">
+        <a
+          onClick={languageSwitcher}
+          className="text-red-500 cursor-pointer hover:text-red-700"
+        >
+          TÜRKÇE'YE
+        </a>{" "}
+        GEÇ
       </span>
     </div>
   );

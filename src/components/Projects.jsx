@@ -1,9 +1,19 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { Data } from "../Data/Data";
 import { DarkModeContext } from "../context/DarkModeContext";
+import { LanguageContext } from "../context/LanguageContext";
+import axios from "axios";
 
 export default function Projects() {
+  const { currentData, setData, currentLang } = useContext(LanguageContext);
   const { darkMode } = useContext(DarkModeContext);
+
+  /* useEffect(() => {
+    axios.get(`https://reqres.in/api/users?${currentLang}`).then((res) => {
+      setData(res.data);
+      console.log(res.data);
+    });
+  }, [currentLang, setData]); */
 
   return (
     <div className="bg-white dark:bg-[_#484148]">
@@ -11,8 +21,8 @@ export default function Projects() {
         <h1 className="text-3xl font-medium text-center pt-20 pb-16">
           Projects
         </h1>
-        <div className="flex flex-row gap-14 mx-8 text-black">
-          {Data.en.projects.map((project, index) => {
+        <div className="flex lg:flex-row gap-14 mx-8 text-black md:flex-col md:justify-center sm:flex-col">
+          {currentData.projects.map((project, index) => {
             return (
               <div
                 key={index}
@@ -48,11 +58,14 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-col items-center">
                   <img
-                    className="w-72 h-64 absolute top-[_345px] "
+                    className="w-72 h-64 absolute lg:top-[_345px] sm:hidden md:hidden lg:block"
                     src="src/assets/pics/pc-img.png"
                     alt=""
                   />
-                  <img src={project.img} className="rounded-md w-52 h-36" />
+                  <img
+                    src={project.img}
+                    className="rounded-md lg:w-52 h-36 sm:w-72"
+                  />
                 </div>
               </div>
             );

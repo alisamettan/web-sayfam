@@ -1,11 +1,14 @@
 import DarkModeContextProvider from "./context/DarkModeContext";
+import LanguageContextProvider from "./context/LanguageContext";
 import Main from "./pages/Main";
 
 function App() {
   return (
-    <DarkModeContextProvider>
-      <Main />
-    </DarkModeContextProvider>
+    <LanguageContextProvider>
+      <DarkModeContextProvider>
+        <Main />
+      </DarkModeContextProvider>
+    </LanguageContextProvider>
   );
 }
 

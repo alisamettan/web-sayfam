@@ -2,7 +2,7 @@ export const Data = {
   en: {
     about: {
       main: "I'm Ali Samet Tan who is full-stack developer.I can craft solid and scalable frontend products.Let's meet.",
-      join: "Currently doing Websites Projects as freelance.Invite me to join your team",
+      join: "Currently developing Website Projects as freelance.Invite me to join your team",
     },
     skills: [
       { img: "src/assets/logos/JavaScript-logo.png", skill: "JAVASCRIPT" },
@@ -72,8 +72,8 @@ export const Data = {
   },
   tr: {
     about: {
-      main: "Ben Ali Samet Tan, full-stack web geliştiriciyim. Sağlam ve ölçeklenebilir ön yüz ürünleri oluşturabilirim. Tanışmak ister misin!?",
-      join: "Şu anda serbest çalışan olarak web projeleri üzerinde çalışıyorum. Beni ekibinize katılmanız için davet edebilirsiniz.",
+      main: "Ben Ali Samet Tan, full-stack web geliştiricisiyim. Sağlam ve ölçeklenebilir ön yüz ürünleri oluşturabilirim. Tanışmak ister misiniz?",
+      join: "Şu anda serbest çalışan olarak web projeleri geliştiriyorum. Beni ekibinize katılmam için davet edebilirsiniz.",
     },
     skills: [
       { img: "src/assets/logos/JavaScript-logo.png", skill: "JAVASCRIPT" },
