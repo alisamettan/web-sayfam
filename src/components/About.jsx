@@ -29,7 +29,7 @@ export default function About() {
       <div className="flex-1 lg:block sm:hidden">
         <img
           className="h-80 md:hidden lg:block rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)]"
-          src="src/assets/pics/IMG_1304.jpg"
+          src={"src/assets/pics/IMG_1304.jpg"}
           alt=""
         />
       </div>
