@@ -11,7 +11,13 @@ export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
 
   return (
-    <div className={darkMode ? "dark bg-slate-900 text-white" : ""}>
+    <div
+      className={
+        darkMode
+          ? "dark bg-slate-900 text-white w-screen h-screen"
+          : "w-screen h-screen"
+      }
+    >
       <Header />
       <About />
       <Skills />

@@ -12,7 +12,7 @@ export default function Projects() {
         <h1 className="text-3xl font-medium text-center pt-20 pb-16">
           {currentLang == "en" ? "Projects" : "Projeler"}
         </h1>
-        <div className="flex lg:flex-row gap-14 mx-8 text-black md:flex-col md:justify-center sm:flex-col">
+        <div className="flex flex-col gap-14 mx-8 text-black sm:flex-row">
           {currentData.projects.map((project, index) => {
             return (
               <div
@@ -49,7 +49,7 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-col items-center">
                   <img
-                    className="w-72 h-64 absolute lg:top-[_345px] sm:hidden md:hidden lg:block"
+                    className="w-72 h-64 absolute lg:top-[_345px] hidden  lg:block"
                     src="/pics/pc-img.png"
                     alt=""
                   />

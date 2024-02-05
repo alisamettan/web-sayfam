@@ -13,7 +13,7 @@ export default function Profile() {
   return (
     <div className=" bg-slate-100 py-16 flex justify-center flex-col items-center dark:bg-[_#2A262B]">
       <h1 className="text-4xl">{currentLang == "en" ? "Profile" : "Profil"}</h1>
-      <div className="flex lg:flex-row justify-between mt-8 gap-16 mx-56 sm:flex-col md:flex-col">
+      <div className="flex flex-col justify-between mt-8 gap-16 mx-56  sm:flex-row">
         <div className="py-6 px-4 bg-white mb-5 flex gap-8 flex-col flex-1 dark:bg-[_#525252] rounded-xl shadow-[10px_10px_5px_0px_rgba(69,65,65,0.75)]">
           <h1 className="text-2xl text-red-500">{currentData.profile.title}</h1>
 

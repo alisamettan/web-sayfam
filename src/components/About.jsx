@@ -7,8 +7,8 @@ export default function About() {
   const { currentData, currentLang } = useContext(LanguageContext);
 
   return (
-    <div className="pt-10  bg-slate-100 pb-20 flex flex-row justify-between  dark:bg-[_#2A262B] lg:pr-0 lg:gap-60 md:gap-28 md:mx-auto sm:gap-44 sm:px-12">
-      <div className="lg:pl-72 flex flex-col gap-y-5 flex-1 md:mx-auto md:my-0 md:pl-52 sm:pl-52  ">
+    <div className=" py-10 align-middle  bg-slate-100 px-10 flex flex-col gap-20 items-center sm:flex-row sm:pb-36  dark:bg-[_#2A262B]  sm:gap-64 sm:align-middle sm:justify-center">
+      <div className=" flex flex-col gap-y-5 flex-1 sm:flex-1 sm:pl-72">
         <h1 className="text-xl ">
           {currentLang == "en" ? "Hi!" : "Merhaba!"} 👋
         </h1>
@@ -26,23 +26,23 @@ export default function About() {
           <a className="text-red-500">alisamet_tan@hotmail.com</a>
         </p>
       </div>
-      <div className="flex-1 lg:block sm:hidden">
+      <div className="flex flex-1">
         <img
-          className="h-80 md:hidden lg:block rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)]"
+          className="h-80 rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)]"
           src="/pics/IMG_1304.jpg"
           alt=""
         />
       </div>
       <div>
         <img
-          className="top-72 relative md:hidden lg:block sm:hidden"
+          className="top-72 left-16 relative md:hidden lg:block hidden"
           src="/svg/Rectangle_18.svg"
           alt=""
         />
         <img
           src="/svg/Ellipse_11.svg"
           alt=""
-          className="top-[300px] right-[450px] relative md:hidden lg:block"
+          className="top-[300px] right-[450px] relative hidden lg:block"
         />
       </div>
     </div>

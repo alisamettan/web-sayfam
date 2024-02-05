@@ -12,7 +12,7 @@ export default function Footer() {
     });
   }, [currentLang, setData]); */
   return (
-    <div className="py-32 flex lg:flex-row justify-center gap-20 dark:bg-[_#484148] md:flex-col md:items-center sm:flex-col sm:items-center">
+    <div className="py-32 flex flex-col items-center text-center justify-center gap-20 dark:bg-[_#484148]  md:items-center  sm:flex-row">
       <p className="text-3xl">{currentData.footer.text}</p>
       <div>
         {currentData.footer.social.map((item, index) => {
