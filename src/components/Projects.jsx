@@ -30,7 +30,7 @@ export default function Projects() {
                   {project.title}
                 </h2>
                 <p>{project.explanation}</p>
-                <div className="flex flex-wrap pb-6 flex gap-2">
+                <div className="flex flex-wrap pb-6 gap-2">
                   {project.techs.map((tech, index) => {
                     return (
                       <h4

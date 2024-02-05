@@ -5,7 +5,7 @@ import { LanguageContext } from "../context/LanguageContext";
 export default function Skills() {
   const { currentLang } = useContext(LanguageContext);
   return (
-    <div className="flex flex-col justify-center items-center gap-12 pt-16  dark:bg-[_#484148] sm:px-36">
+    <div className="flex flex-col justify-center items-center gap-12 sm:py-16 lg:pb-0  dark:bg-[_#484148] sm:px-36">
       <h1 className="text-4xl">
         {currentLang == "en" ? "Skills" : "Yetenekler"}
       </h1>
