@@ -9,6 +9,7 @@ import { DarkModeContext } from "../context/DarkModeContext";
 
 export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
+
   return (
     <div className={darkMode ? "dark bg-slate-900 text-white" : ""}>
       <Header />

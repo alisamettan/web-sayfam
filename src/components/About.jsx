@@ -1,19 +1,14 @@
 import { faGithub, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
-import axios from "axios";
 
 export default function About() {
-  const { currentData, setData, currentLang } = useContext(LanguageContext);
-  /*  useEffect(() => {
-    axios.get(`https://reqres.in/api/users?${currentLang}`).then((res) => {
-      setData(res.data);
-    });
-  }, [currentLang, setData]); */
+  const { currentData, currentLang } = useContext(LanguageContext);
+
   return (
-    <div className="pt-10  bg-slate-100 pb-5 flex lg:flex-row justify-between  dark:bg-[_#2A262B] lg:pr-0 lg:gap-60 md:gap-28 md:mx-auto sm:gap-44 sm:px-12">
-      <div className="lg:pl-40 flex flex-col gap-y-5 flex-1 sm:mx-auto ">
+    <div className="pt-10  bg-slate-100 pb-20 flex flex-row justify-between  dark:bg-[_#2A262B] lg:pr-0 lg:gap-60 md:gap-28 md:mx-auto sm:gap-44 sm:px-12">
+      <div className="lg:pl-72 flex flex-col gap-y-5 flex-1 md:mx-auto md:my-0 md:pl-52 sm:pl-52  ">
         <h1 className="text-xl ">
           {currentLang == "en" ? "Hi!" : "Merhaba!"} 👋
         </h1>
@@ -33,9 +28,21 @@ export default function About() {
       </div>
       <div className="flex-1 lg:block sm:hidden">
         <img
-          className="h-80 rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)]"
+          className="h-80 md:hidden lg:block rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)]"
           src="src/assets/pics/IMG_1304.jpg"
           alt=""
+        />
+      </div>
+      <div>
+        <img
+          className="top-72 relative md:hidden lg:block sm:hidden"
+          src="src/assets/svg/Rectangle_18.svg"
+          alt=""
+        />
+        <img
+          src="src/assets/svg/Ellipse_11.svg"
+          alt=""
+          className="top-[300px] right-[450px] relative md:hidden lg:block"
         />
       </div>
     </div>

@@ -19,6 +19,16 @@ export default function Skills() {
           );
         })}
       </div>
+      <img
+        src="src/assets/svg/Rectangle_22.svg"
+        alt=""
+        className="relative top-[70px] right-[700px] md:hidden lg:block "
+      />
+      <img
+        src="src/assets/svg/Ellipse_12.svg"
+        alt=""
+        className="relative top-[170px] left-[700px] md:hidden lg:block"
+      />
     </div>
   );
 }

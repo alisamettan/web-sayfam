@@ -8,7 +8,7 @@ export const LanguageContext = createContext();
 export default function LanguageContextProvider({ children }) {
   const initialLang = "en";
   const [currentLang, setCurrentLang] = useLocalStorage("lang", initialLang);
-  //const [currentData, setCurrentData] = useState({ ...Data[currentLang] });
+  //const [currentData, setCurrentData] = useState({});
   let currentData = Data[currentLang];
 
   function languageSwitcher() {
@@ -19,10 +19,13 @@ export default function LanguageContextProvider({ children }) {
     axios
       .post(`https://reqres.in/api/users?${currentLang}`, Data[currentLang])
       .then((res) => {
-        console.log(res.data);
         currentData = res.data;
+        console.log(res.data);
 
         console.log(currentLang);
+      })
+      .catch((error) => {
+        console.error("Error during POST request:", error);
       });
   }, [currentLang]);
 
