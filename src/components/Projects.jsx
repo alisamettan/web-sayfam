@@ -1,19 +1,10 @@
 import { useContext, useEffect } from "react";
-import { Data } from "../Data/Data";
 import { DarkModeContext } from "../context/DarkModeContext";
 import { LanguageContext } from "../context/LanguageContext";
-import axios from "axios";
 
 export default function Projects() {
-  const { currentData, setData, currentLang } = useContext(LanguageContext);
+  const { currentData, currentLang } = useContext(LanguageContext);
   const { darkMode } = useContext(DarkModeContext);
-
-  /* useEffect(() => {
-    axios.get(`https://reqres.in/api/users?${currentLang}`).then((res) => {
-      setData(res.data);
-      console.log(res.data);
-    });
-  }, [currentLang, setData]); */
 
   return (
     <div className="bg-white dark:bg-[_#484148]">
@@ -59,7 +50,7 @@ export default function Projects() {
                 <div className="flex flex-col items-center">
                   <img
                     className="w-72 h-64 absolute lg:top-[_345px] sm:hidden md:hidden lg:block"
-                    src="src/assets/pics/pc-img.png"
+                    src="public/pics/pc-img.png"
                     alt=""
                   />
                   <img
