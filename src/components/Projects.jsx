@@ -50,7 +50,7 @@ export default function Projects() {
                 <div className="flex flex-col items-center">
                   <img
                     className="w-72 h-64 absolute lg:top-[_345px] sm:hidden md:hidden lg:block"
-                    src="public/pics/pc-img.png"
+                    src="/pics/pc-img.png"
                     alt=""
                   />
                   <img
