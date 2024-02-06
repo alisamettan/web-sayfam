@@ -56,6 +56,7 @@ export default function Main() {
 
   return (
     <div
+      data-cy="haveDark"
       className={
         darkMode
           ? "dark bg-slate-900 text-white w-screen h-screen"
