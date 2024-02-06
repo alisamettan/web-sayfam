@@ -22,12 +22,12 @@ export default function Skills() {
       <img
         src="public/svg/Rectangle_22.svg"
         alt=""
-        className="relative top-[70px] right-[700px] hidden lg:block "
+        className="relative top-[70px] right-[700px] hidden sm:block "
       />
       <img
         src="public/svg/Ellipse_12.svg"
         alt=""
-        className="relative top-[60px] left-[700px] hidden lg:block"
+        className="relative top-[60px] left-[700px] hidden sm:block"
       />
     </div>
   );
