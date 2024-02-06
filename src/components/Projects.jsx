@@ -1,10 +1,8 @@
-import { useContext, useEffect } from "react";
-import { DarkModeContext } from "../context/DarkModeContext";
+import { useContext } from "react";
 import { LanguageContext } from "../context/LanguageContext";
 
 export default function Projects() {
   const { currentData, currentLang } = useContext(LanguageContext);
-  const { darkMode } = useContext(DarkModeContext);
 
   return (
     <div className="bg-white dark:bg-[_#484148]">
@@ -17,11 +15,7 @@ export default function Projects() {
             return (
               <div
                 key={index}
-                className={
-                  darkMode
-                    ? "flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10 dark:bg-[_#495351]"
-                    : "flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10"
-                }
+                className={`flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10 dark:bg-[${project.darkcolor}]`}
                 style={{
                   backgroundColor: project.color,
                 }}

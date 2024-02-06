@@ -39,6 +39,7 @@ export const Data = {
         vercel: "Go to app",
         vercelUrl: "https://pizzastore-lime.vercel.app/",
         color: "#B4D4FF",
+        darkcolor: "#2D3235",
       },
       {
         title: "Do you want to add movies that you love?",
@@ -51,6 +52,7 @@ export const Data = {
         vercel: "Go to app",
         vercelUrl: "https://movieaddel.vercel.app/movies",
         color: "#C3E2C2",
+        darkcolor: "#495351",
       },
       {
         title: "Let's buy some books",
@@ -63,6 +65,7 @@ export const Data = {
         vercel: "Go to app",
         vercelUrl: "https://bookstore-three-steel.vercel.app/",
         color: "#FFE7C1",
+        darkcolor: "#534c49",
       },
     ],
     footer: {
@@ -110,6 +113,7 @@ export const Data = {
         vercel: "Uygulamaya Git",
         vercelUrl: "https://pizzastore-lime.vercel.app/",
         color: "#B4D4FF",
+        darkcolor: "#2D3235",
       },
       {
         title: "Sevdiğiniz filmleri listenize eklemek ister misiniz?",
@@ -122,6 +126,7 @@ export const Data = {
         vercel: "Uygulamaya Git",
         vercelUrl: "https://movieaddel.vercel.app/movies",
         color: "#C3E2C2",
+        darkcolor: "#495351",
       },
       {
         title: "Hadi kitap satın alalım!",
@@ -134,6 +139,7 @@ export const Data = {
         vercel: "Uygulamaya Git",
         vercelUrl: "https://bookstore-three-steel.vercel.app/",
         color: "#FFE7C1",
+        darkcolor: "#534c49",
       },
     ],
     footer: {
