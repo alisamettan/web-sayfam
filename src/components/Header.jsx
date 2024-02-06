@@ -6,7 +6,7 @@ export default function Header() {
   const { toggleDarkMode, darkMode } = useContext(DarkModeContext);
   const { languageSwitcher, currentLang } = useContext(LanguageContext);
   return (
-    <div className=" py-8 flex justify-end pr-10 bg-slate-100 dark:bg-[_#2A262B] ">
+    <div className="py-8 flex justify-end pr-10 bg-slate-100 dark:bg-[_#2A262B] ">
       <label className="relative inline-flex items-center cursor-pointer">
         <input
           type="checkbox"

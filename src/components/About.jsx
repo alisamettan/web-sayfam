@@ -7,7 +7,7 @@ export default function About() {
   const { currentData, currentLang } = useContext(LanguageContext);
 
   return (
-    <div className=" py-10 align-middle  bg-slate-100 px-10 flex flex-col gap-20 items-center sm:flex-row sm:pb-36  dark:bg-[_#2A262B]  sm:gap-64 sm:align-middle sm:justify-center">
+    <div className="py-10 align-middle  bg-slate-100 px-10 flex flex-col gap-20 items-center sm:flex-row sm:pb-36  dark:bg-[_#2A262B]  sm:gap-64 sm:align-middle sm:justify-center">
       <div className=" flex flex-col gap-y-5 flex-1 sm:flex-1 sm:pl-72">
         <h1 className="text-xl ">
           {currentLang == "en" ? "Hi!" : "Merhaba!"} 👋
