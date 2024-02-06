@@ -15,7 +15,7 @@ export default function Projects() {
             return (
               <div
                 key={index}
-                className={`flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10 dark:bg-[${project.darkcolor}]`}
+                className={`flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10 dark:bg-[_${project.darkcolor}]`}
                 style={{
                   backgroundColor: project.color,
                 }}

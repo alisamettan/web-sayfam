@@ -10,7 +10,7 @@ export default function Footer() {
       <div>
         {currentData.footer.social.map((item, index) => {
           return (
-            <div key={index} className="flex flex-col text-lg">
+            <div id="mailto" key={index} className="flex flex-col text-lg">
               <a className={`${item.color}`} href={item.link}>
                 {item.social}
               </a>

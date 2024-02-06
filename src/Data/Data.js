@@ -39,7 +39,7 @@ export const Data = {
         vercel: "Go to app",
         vercelUrl: "https://pizzastore-lime.vercel.app/",
         color: "#B4D4FF",
-        darkcolor: "#2D3235",
+        darkcolor: "#525252",
       },
       {
         title: "Do you want to add movies that you love?",
@@ -84,7 +84,7 @@ export const Data = {
         },
         {
           social: "Email",
-          link: "alisamet_tan@hotmail.com",
+          link: "https://mail.google.com",
           color: "text-red-600",
         },
       ],
@@ -175,7 +175,7 @@ export const Data = {
         },
         {
           social: "Email",
-          link: "alisamet_tan@hotmail.com",
+          link: "https://mail.google.com",
           color: "text-red-600",
         },
       ],
