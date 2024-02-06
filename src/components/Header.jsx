@@ -12,7 +12,7 @@ export default function Header() {
           type="checkbox"
           value=""
           className="sr-only peer"
-          //data-testid="darkMode-toggle"
+          data-cy="darkMode-toggle"
           checked={darkMode}
           onChange={toggleDarkMode}
         />
