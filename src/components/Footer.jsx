@@ -11,7 +11,9 @@ export default function Footer() {
         {currentData.footer.social.map((item, index) => {
           return (
             <div key={index} className="flex flex-col text-lg">
-              <a>{item}</a>
+              <a className={`${item.color}`} href={item.link}>
+                {item.social}
+              </a>
             </div>
           );
         })}

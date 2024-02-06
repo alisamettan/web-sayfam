@@ -70,7 +70,24 @@ export const Data = {
     ],
     footer: {
       text: "Let's work together on your next product.",
-      social: ["Github", "Personal Blog", "Linkedin", "Email"],
+      social: [
+        {
+          social: "Github",
+          link: "https://github.com/alisamettan",
+          color: "text-blue-600",
+        },
+        { social: "Personal Blog", link: "", color: "text-black" },
+        {
+          social: "Linkedin",
+          link: "https://www.linkedin.com/in/alisamettan/",
+          color: "text-sky-400",
+        },
+        {
+          social: "Email",
+          link: "alisamet_tan@hotmail.com",
+          color: "text-red-600",
+        },
+      ],
     },
   },
   tr: {
@@ -143,8 +160,25 @@ export const Data = {
       },
     ],
     footer: {
-      text: "Bir sonraki ürününüzde beraber çalışalım!",
-      social: ["Github", "Personal Blog", "Linkedin", "Email"],
+      text: "Let's work together on your next product.",
+      social: [
+        {
+          social: "Github",
+          link: "https://github.com/alisamettan",
+          color: "text-blue-600",
+        },
+        { social: "Personal Blog", link: "", color: "text-black" },
+        {
+          social: "Linkedin",
+          link: "https://www.linkedin.com/in/alisamettan/",
+          color: "text-sky-400",
+        },
+        {
+          social: "Email",
+          link: "alisamet_tan@hotmail.com",
+          color: "text-red-600",
+        },
+      ],
     },
   },
 };
