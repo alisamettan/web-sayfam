@@ -8,10 +8,10 @@ export default function Projects() {
     <div className="bg-white dark:bg-[_#484148]">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-3xl font-medium text-center pt-20 pb-16">
-          {currentLang == "en" ? "Projects" : "Projeler"}
+          {currentData.projects.baslik}
         </h1>
         <div className="flex flex-col gap-14 mx-8 text-black sm:flex-row">
-          {currentData.projects.map((project, index) => {
+          {currentData.projects.projects.map((project, index) => {
             return (
               <div
                 key={index}

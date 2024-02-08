@@ -38,7 +38,7 @@ export default function LanguageContextProvider({ children }) {
       .then((res) => {
         //currentData = res.data;
         console.log(res.data);
-        setCurrentData({ ...res.data });
+        setCurrentData({ currentData, ...res.data });
         console.log(currentLang);
         setLoading(false);
         currentLang == "en"

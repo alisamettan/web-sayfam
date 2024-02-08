@@ -4,13 +4,12 @@ import { LanguageContext } from "../context/LanguageContext";
 
 export default function Skills() {
   const { currentLang } = useContext(LanguageContext);
+  const { currentData } = useContext(LanguageContext);
   return (
     <div className="flex flex-col pt-12 justify-center items-center gap-12 md:py-16 lg:pb-0  dark:bg-[_#484148] sm:px-36">
-      <h1 className="text-4xl">
-        {currentLang == "en" ? "Skills" : "Yetenekler"}
-      </h1>
+      <h1 className="text-4xl">{currentData.skills.baslik}</h1>
       <div className="flex flex-wrap gap-8 px-8 justify-center">
-        {Data.en.skills.map((skill, index) => {
+        {currentData.skills.skills.map((skill, index) => {
           return (
             <div key={index} className="text-center">
               <img src={skill.img} alt="" />
