@@ -14,8 +14,7 @@ import "react-toastify/dist/ReactToastify.min.css";
 
 export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
-  const { currentData, currentLang, setCurrentData } =
-    useContext(LanguageContext);
+  const { currentLang, setCurrentData } = useContext(LanguageContext);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
