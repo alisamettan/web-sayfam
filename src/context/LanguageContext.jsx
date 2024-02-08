@@ -2,6 +2,8 @@ import { createContext, useEffect, useState } from "react";
 import { Data } from "../Data/Data";
 import axios from "axios";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 export const LanguageContext = createContext();
 
@@ -13,6 +15,19 @@ export default function LanguageContextProvider({ children }) {
 
   function languageSwitcher() {
     setCurrentLang(currentLang == "en" ? "tr" : "en");
+    currentLang === "en"
+      ? toast.success("Dil Başarıyla Değiştirildi🎉🎉🎉", {
+          position: "top-center",
+          autoClose: 3000,
+          pauseOnHover: true,
+          theme: "colored",
+        })
+      : toast.success("Language is switched succesfully🎉🎉🎉", {
+          position: "top-center",
+          autoClose: 3000,
+          pauseOnHover: true,
+          theme: "colored",
+        });
   }
 
   useEffect(() => {

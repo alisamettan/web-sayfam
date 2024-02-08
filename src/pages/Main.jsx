@@ -9,6 +9,8 @@ import { DarkModeContext } from "../context/DarkModeContext";
 import { Data } from "../Data/Data";
 import { LanguageContext } from "../context/LanguageContext";
 import axios from "axios";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
@@ -26,6 +28,9 @@ export default function Main() {
         setCurrentData({ ...res.data });
         console.log(currentLang);
         setLoading(false);
+        currentLang == "en"
+          ? toast.success("Welcome to My Page 👋")
+          : toast.success("Sayfama Hoşgeldin 👋");
       })
       .catch((error) => {
         console.error("Error during POST request:", error);
@@ -69,6 +74,12 @@ export default function Main() {
       <Profile />
       <Projects />
       <Footer />
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        pauseOnHover
+        theme="colored"
+      />
     </div>
   );
 }
