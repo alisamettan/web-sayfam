@@ -7,8 +7,8 @@ export default function About() {
   const { currentData, currentLang } = useContext(LanguageContext);
 
   return (
-    <div className="py-10 align-middle  bg-slate-100 px-10 flex flex-col gap-20 items-center md:flex-row sm:pb-36  dark:bg-[_#2A262B]  sm:gap-28  sm:justify-center md:pl-64">
-      <div className=" flex flex-col gap-y-5 flex-1 sm:flex-1">
+    <div className="py-10 align-middle  bg-slate-100 px-10 flex flex-col gap-20 items-center md:flex-row sm:pb-36  dark:bg-[_#2A262B]  sm:gap-28  sm:justify-center md:pl-80">
+      <div className=" flex flex-col gap-y-5 flex-1 sm:w-4/5 ">
         <h1 className="text-xl ">
           {currentLang == "en" ? "Hi!" : "Merhaba!"} 👋
         </h1>
@@ -28,7 +28,7 @@ export default function About() {
       </div>
       <div className="flex flex-1">
         <img
-          className="h-80 rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)]"
+          className="h-80 rounded-2xl shadow-[-26px_-12px_3px_0px_rgba(230,10,10,0.75)] md:hidden lg:block"
           src="/pics/IMG_1304.jpg"
           alt=""
         />
