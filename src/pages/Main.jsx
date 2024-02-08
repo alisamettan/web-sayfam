@@ -14,27 +14,8 @@ import "react-toastify/dist/ReactToastify.min.css";
 
 export default function Main() {
   const { darkMode } = useContext(DarkModeContext);
-  const { currentLang, setCurrentData } = useContext(LanguageContext);
-  const [loading, setLoading] = useState(true);
+  const { currentLang, setCurrentData, loading } = useContext(LanguageContext);
 
-  useEffect(() => {
-    setLoading(true);
-    axios
-      .post(`https://reqres.in/api/users?${currentLang}`, Data[currentLang])
-      .then((res) => {
-        //currentData = res.data;
-        console.log(res.data);
-        setCurrentData({ ...res.data });
-        console.log(currentLang);
-        setLoading(false);
-        currentLang == "en"
-          ? toast.success("Welcome to My Page 👋")
-          : toast.success("Sayfama Hoşgeldin 👋");
-      })
-      .catch((error) => {
-        console.error("Error during POST request:", error);
-      });
-  }, []);
   if (loading)
     return (
       <div role="status" className="flex justify-center h-screen items-center ">

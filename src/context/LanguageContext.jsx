@@ -11,6 +11,7 @@ export default function LanguageContextProvider({ children }) {
   const initialLang = "en";
   const [currentLang, setCurrentLang] = useLocalStorage("lang", initialLang);
   const [currentData, setCurrentData] = useState({});
+  const [loading, setLoading] = useState(true);
   //let currentData = Data[currentLang];
 
   function languageSwitcher() {
@@ -31,6 +32,7 @@ export default function LanguageContextProvider({ children }) {
   }
 
   useEffect(() => {
+    setLoading(true);
     axios
       .post(`https://reqres.in/api/users?${currentLang}`, Data[currentLang])
       .then((res) => {
@@ -38,6 +40,10 @@ export default function LanguageContextProvider({ children }) {
         console.log(res.data);
         setCurrentData({ ...res.data });
         console.log(currentLang);
+        setLoading(false);
+        currentLang == "en"
+          ? toast.success("Welcome to My Page 👋")
+          : toast.success("Sayfama Hoşgeldin 👋");
       })
       .catch((error) => {
         console.error("Error during POST request:", error);
@@ -46,7 +52,13 @@ export default function LanguageContextProvider({ children }) {
 
   return (
     <LanguageContext.Provider
-      value={{ currentData, languageSwitcher, currentLang, setCurrentData }}
+      value={{
+        currentData,
+        languageSwitcher,
+        currentLang,
+        setCurrentData,
+        loading,
+      }}
     >
       {children}
     </LanguageContext.Provider>
