@@ -15,7 +15,7 @@ export default function Projects() {
             return (
               <div
                 key={index}
-                className={`flex flex-col relative justify-between items-center gap-5 rounded-xl pt-10 px-10 dark:bg-[_${project.darkcolor}]`}
+                className={`sm:w-[25%] flex flex-col relative justify-between items-center gap-5 rounded-xl py-10 px-10 dark:bg-[_${project.darkcolor}]`}
                 style={{
                   backgroundColor: project.color,
                 }}
@@ -43,13 +43,8 @@ export default function Projects() {
                 </div>
                 <div className="flex flex-col items-center">
                   <img
-                    className="w-72 h-64 absolute lg:top-[_345px] hidden  lg:block"
-                    src="/pics/pc-img.png"
-                    alt=""
-                  />
-                  <img
                     src={project.img}
-                    className="rounded-md lg:w-52 h-36 sm:w-72"
+                    className="rounded-md lg:w-52 h-36 sm:w-96"
                   />
                 </div>
               </div>
