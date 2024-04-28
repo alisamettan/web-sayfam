@@ -1,7 +1,7 @@
 export const Data = {
   en: {
     about: {
-      main: "I'm Ali Samet Tan who is full-stack developer.I can craft solid and scalable frontend products.Let's meet.",
+      main: "I'm Ali Samet Tan who is full-stack developer.I can craft solid and scalable front-end and back-end products.Let's meet.",
       join: "Currently developing Website Projects as freelance.Invite me to join your team",
     },
     skills: {
@@ -13,6 +13,8 @@ export const Data = {
         { img: "/logos/node-logo.png", skill: "NODE" },
         { img: "/logos/vs-code-logo.png", skill: "VS CODE" },
         { img: "/logos/figma-logo.png", skill: "FIGMA" },
+        { img: "/logos/Java-Logo.jpg", skill: "JAVA" },
+        { img: "/logos/spring.png", skill: "SPRING BOOT" },
       ],
     },
     profile: {
@@ -121,7 +123,7 @@ export const Data = {
   },
   tr: {
     about: {
-      main: "Ben Ali Samet Tan, full-stack web geliştiricisiyim. Sağlam ve ölçeklenebilir ön yüz ürünleri oluşturabilirim. Tanışmak ister misiniz?",
+      main: "Ben Ali Samet Tan, full-stack web geliştiricisiyim. Sağlam ve ölçeklenebilir ön yüz ve arka yüz ürünleri oluşturabilirim. Tanışmak ister misiniz?",
       join: "Şu anda serbest çalışan olarak web projeleri geliştiriyorum. Beni ekibinize katılmam için davet edebilirsiniz.",
     },
     skills: {
@@ -133,6 +135,8 @@ export const Data = {
         { img: "/logos/node-logo.png", skill: "NODE" },
         { img: "/logos/vs-code-logo.png", skill: "VS CODE" },
         { img: "/logos/figma-logo.png", skill: "FIGMA" },
+        { img: "/logos/Java-Logo.jpg", skill: "JAVA" },
+        { img: "/logos/spring.png", skill: "SPRING BOOT" },
       ],
     },
     profile: {

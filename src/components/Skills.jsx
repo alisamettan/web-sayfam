@@ -12,7 +12,11 @@ export default function Skills() {
         {currentData.skills.skills.map((skill, index) => {
           return (
             <div key={index} className="text-center">
-              <img src={skill.img} alt="" />
+              <img
+                className="w-[10rem] h-[10rem] border-2 rounded-xl"
+                src={skill.img}
+                alt=""
+              />
               <p>{skill.skill}</p>
             </div>
           );
